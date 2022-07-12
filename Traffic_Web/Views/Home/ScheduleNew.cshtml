@@ -1,0 +1,208 @@
+﻿@{
+    ViewData["Title"] = "Schedule New";
+}
+<h1>@ViewData["Title"]</h1>
+          <!-- Form Group -->
+
+        <div class="container mt-3 myborder">
+            <fieldset class="form-group">
+                <div class="row mt-5">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <div class="input-group date" id="datepicker">
+                                <input type="text" class="form-control">
+                                <span class="input-group-append">
+                                    <span class="input-group-text bg-white">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="floatingInput">MBOL #</label>
+                            <input type="text" class="form-control" placeholder="Enter MBOL #">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="floatingInput">Load #</label>
+                            <input type="email" class="form-control" id="floatingInput" placeholder="Enter Load #">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col myborder">
+                            <div class="row form-group">
+                                <h4 class="mt-4">Select Type</h4>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionTypes" id="optionType" value="spot" checked="">
+                                    Spot
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionTypes" id="optionType" value="live">
+                                    Live
+                                    </label>
+                                </div>
+                                <div class="form-check disabled">
+                                    <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionTypes" id="optionType" value="preload">
+                                    Pre-Load
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------ Row Two ------------------------------------------ -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="exampleSelect1" class="form-label mt-4">Customer</label>
+                            <select class="form-select" id="exampleSelect1">
+                              <option>Select Customer</option>
+                              <option>Target</option>
+                              <option>Walmart</option>
+                              <option>Bestbuy</option>
+                              <option>Amazon</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="exampleSelect1" class="form-label mt-4">City</label>
+                        <select class="form-select" id="exampleSelect1">
+                          <option>Select City</option>
+                          <option>Grove City</option>
+                          <option>Columbus</option>
+                          <option>Canton</option>
+                          <option>Akron</option>
+                        </select>
+                      </div>
+                    <div class="col-md-3">
+                        <label for="exampleSelect1" class="form-label mt-4">State</label>
+                        <select class="form-select" id="exampleSelect1">
+                          <option>Select State</option>
+                          <option>Ohio</option>
+                          <option>Michigan</option>
+                          <option>California</option>
+                          <option>New York</option>
+                        </select>
+                      </div>
+                    <div class="col-md-3">
+                        <label for="exampleSelect1" class="form-label mt-4">Carrier</label>
+                        <select class="form-select" id="exampleSelect1">
+                          <option>Select Carrier</option>
+                          <option>Walmart</option>
+                          <option>Amazon</option>
+                          <option>Hub Logistics</option>
+                          <option>JB Hunt</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- ------------------------------------------ Row Three ------------------------------------------ -->
+                <div class="row mt-4">
+                    <div class="col-md-3 text-center">
+                        <div class="col text-left pl-5 myborder">
+                            <div class="row form-group">
+                                <h4 class="mt-4">Labels</h4>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionLabels" id="optionLabel" value="spot" checked="">
+                                    Yes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionLabels" id="optionLabel" value="live">
+                                    No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="labels" class="form-label mt-4">Reserved Trailer #</label>
+                        <select class="form-select" id="labels">
+                          <option>Trailer #'s</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="form-group">
+                            <label for="floatingInput">Number of Stops</label>
+                            <input type="text" class="form-control" placeholder="Enter Number of Stops">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="form-group">
+                            <label for="floatingInput">Number of Cartons</label>
+                            <input type="text" class="form-control" placeholder="Enter Number of Cartons">
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------ Row Four ------------------------------------------ -->
+                <div class="row">
+                    <div class="col-md-3 mt-4">
+                        <div class="form-group">
+                            <label for="floatingInput">Cube</label>
+                            <input type="text" class="form-control" placeholder="Enter Cube">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="form-group">
+                            <label for="floatingInput">Number of Items</label>
+                            <input type="text" class="form-control" placeholder="Enter Number of Items">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="input-group">
+                            <span class="input-group-text">Enter Comments</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------ Row Five ------------------------------------------ -->
+                <div class="row mb-3">
+                    <div class="col-md-3">
+                        <label for="labels" class="form-label mt-4">Scheduler</label>
+                        <select class="form-select" id="labels">
+                          <option>Select Coordinator</option>
+                          <option>Robby Roberts</option>
+                          <option>Catherine Sampson</option>
+                          <option>Michele Ritchie</option>
+                          <option>Alyssa Craft</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="labels" class="form-label mt-4">Status</label>
+                        <select class="form-select" id="labels">
+                            <option>Select Status</option>
+                            <option>Created</option>
+                            <option>Staged</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 text-right mt-5">
+                        <div class="form-group">
+                            <button type="button" class="btn btn-danger">Cancel</button>
+                            <button type="button" class="btn btn-primary">Submit Load</button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script type="text/javascript">
+            $(function() {
+                $('#datepicker').datepicker();
+            });
+        </script>
